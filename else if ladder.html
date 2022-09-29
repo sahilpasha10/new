@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>if else ladder</title>
+</head>
+<body>
+    <h1> grades </h1><br></br>
+    
+    <script >
+   var htmlmarks = parseInt(prompt("enter the htmlmarks"));
+   var cssmarks = parseInt(prompt("enter the cssmarks"));
+   var csharpmarks = parseInt(prompt("enter the csharpmarks"));
+
+   var total = htmlmarks + cssmarks + csharpmarks;
+   document.write("totalmarks:"+total+"<br/>");
+
+   var average = total/3;
+   document.write("Average :"+average+"<br/>");
+
+   if(htmlmarks>=35 && cssmarks>=35 && csharpmarks>=35)
+  
+   {
+    document.write("result:passed"+"<br/>");
+    if(average>=35 && average<60)
+    {
+
+    document.write("grade c"+"<br/>");
+     }
+      else if(average>=60 && average<70)
+     { 
+    document.write("grade b"+"<br/>");
+     }
+    else
+    {
+        document.write("grade a");
+    }
+   }
+
+
+        else{
+    document.write("result:failed");
+   }
+
+   
+
+   </script>
+</body>
+</html>

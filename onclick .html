@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>onclickcf</title>
+    </head>
+    <script>
+        function calculate(a){
+        var x= parseInt(document.calcform.num1.value);  
+        var y= parseInt(document.calcform.num2.value);  
+        var z= document.calcform.result;
+        
+
+        if(a.value=="add"){
+            z.value=x+y;
+
+        }else if(a.value=="sub")
+        {
+            z.value=x-y;
+
+         }else if(a.value=="mul")
+         {
+            z.value=x*y;
+            
+         }else if(a.value=="div")
+         {
+            z.value=x/y;
+            
+        }else 
+        {
+            z.value=x%y; 
+        }
+    }
+        
+
+    </script>
+
+<body>
+   <form name="calcform">
+    number1:<input type="text" name="num1" /><br/>
+    number2:<input type="text" name="num2"/><br/>
+    result:<input type="text" name ="result" /><br/>
+    <input type="button" name ="add" value="add" onclick="calculate(this)" />
+    <input type="button" name ="sub" value="sub" onclick="calculate(this)" />
+    <input type="button" name ="mul" value="mul" onclick="calculate(this)" />
+    <input type="button" name ="div" value="div" onclick="calculate(this)" />
+    <input type="button" name ="mod" value="mod" onclick="calculate(this)" /> 
+    </form>
+</body>
+</html>
